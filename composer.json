@@ -1,0 +1,23 @@
+{
+    "name": "meysampg/yii2-jtimepicker",
+    "description": "Jalali Date-Time Picker based on jQueryUi DatePicker",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","Jalali","Persian","Calendar"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Meysam P.G.",
+            "email": "p.g.meysam@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2-jui": "*",
+        "bower-asset/jqueryui-jtimepicker-addon": "*",
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "meysampg\\jtimepicker\\": ""
+        }
+    }
+}
