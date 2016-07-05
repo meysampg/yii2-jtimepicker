@@ -1,6 +1,6 @@
-jTimePicker
+Yii2-JTimePicker
 ===========
-Jalali Date-Time Picker based on jQueryUi DatePicker
+Jalali Date-Time Picker based on jQueryUi DatePicker Extension For Yii2
 
 Installation
 ------------
@@ -28,4 +28,9 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \meysampg\jtimepicker\AutoloadExample::widget(); ?>```
+<?= \meysampg\jtimepicker\DateTimePicker::widget(); ?>
+```
+or
+```php
+<?= \meysampg\jtimepicker\DatePicker::widget(); ?>
+```
