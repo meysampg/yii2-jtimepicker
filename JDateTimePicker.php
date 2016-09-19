@@ -12,9 +12,11 @@ use meysampg\jtimepicker\JTimePickerAsset;
 
 class JDateTimePicker extends BaseDatePicker
 {
-	public function run()
-	{
-		echo $this->renderWidget() . "\n";
+    public function run()
+    {
+        $view = $this->getView();
+
+        echo $this->renderWidget() . "\n";
 
         $containerID = $this->inline ? $this->containerOptions['id'] : $this->options['id'];
         $language = $this->language ? $this->language : Yii::$app->language;
@@ -26,7 +28,6 @@ class JDateTimePicker extends BaseDatePicker
         }
 
         if ($language !== 'en-US') {
-            $view = $this->getView();
             $options = Json::htmlEncode($this->clientOptions);
             $language = Html::encode($language);
             $view->registerJs("$('#{$containerID}').datetimepicker($.extend({}, $.datepicker.regional['{$language}'], $options));");
@@ -35,6 +36,6 @@ class JDateTimePicker extends BaseDatePicker
         }
 
         $this->registerClientEvents('datetimepicker', $containerID);
-		JTimePickerAsset::register($view);
-	}
+        JTimePickerAsset::register($view);
+    }
 }

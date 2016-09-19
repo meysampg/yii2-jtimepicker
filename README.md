@@ -25,12 +25,13 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Once the extension is installed, simply use it in your code by
 
 ```php
-<?= \meysampg\jtimepicker\DateTimePicker::widget(); ?>
+<?= \meysampg\jtimepicker\JDateTimePicker::widget(); ?>
 ```
-or
+for a combined Time & Date picker or
 ```php
-<?= \meysampg\jtimepicker\DatePicker::widget(); ?>
+<?= \meysampg\jtimepicker\JDatePicker::widget(); ?>
 ```
+for a single date picker.
